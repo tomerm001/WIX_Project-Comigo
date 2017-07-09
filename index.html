@@ -10,41 +10,52 @@
     <!--import icomoon-->
     <link rel="stylesheet" href="assets/fonts/icomoon/style.css">
 
+    <!--import normalize.css-->
+    <link rel="stylesheet" href="./styles/normalize.css">
+
     <!--import main.css-->
     <link rel="stylesheet" href="./styles/main.css">
+
+    <!--add favicon-->
+    <link rel="shortcut icon" type="image/x-icon"
+          href="http://www.comigo.com/wp-content/themes/comigo/favicon.ico">
+
+    <!--import google font-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,700"
+          rel="stylesheet">
   </head>
   <body>
 
     <!-- ----------------- NAVBAR / HEADER SECTION ------------------ -->
 
-    <header>
+    <header class="main-header">
       <a href="http://www.comigo.com"><img src="assets/logo/comigo-logo-black.png"
                                            alt="Comigo Logo"></a>
-      <nav>
-        <ul>
+      <nav class="center">
+        <ul class="clean-styled-list">
           <li><a href="index.html">Home</a></li>
           <li><a href="">Our Solutions</a>
             <ul>
               <li><a href="">EI Cloud</a></li>
               <ul>
-                <li><a href="">EI<sup>x</sup></a></li>
-                <li><a href="">EI Mind</a></li>
+                <li><a href="">EI<sup>x</sup></a></li><!--
+                --><li><a href="">EI Mind</a></li>
               </ul>
               <li><a href="">EI Middleware</a>
                 <ul>
-                  <li><a href="">Android</a></li>
-                  <li><a href="">Comigo Whatchapp<sup>tm</sup> Applications</a></li>
+                  <li><a href="">Android</a></li><!--
+                --><li><a href="">Comigo Whatchapp<sup>tm</sup> Applications</a></li>
                 </ul>
-              </li>
-              <li><a href="">Android STB</a></li>
+              </li><!--
+              --><li><a href="">Android STB</a></li>
             </ul>
           </li>
           <li><a href="">Partners</a></li>
           <li><a href="">Industry Insights</a>
             <ul>
-              <li><a href="">Media Room</a></li>
-              <li><a href="">Blog</a></li>
-              <li><a href="">Industry Events</a></li>
+              <li><a href="">Media Room</a></li><!--
+              --><li><a href="">Blog</a></li><!--
+              --><li><a href="">Industry Events</a></li>
             </ul>
           </li>
           <li><a href="">About</a></li>
@@ -56,40 +67,26 @@
     <!-- --------------- MAIN ------------------- -->
 
     <main>
-      <section>
-        <!--background images for css-->
-        <!--<div>-->
-        <!--<img src="assets/main-bg/home-featured-bg.png" alt="Background Image">-->
-        <!--<img src="assets/main-bg/home-brain-image-new-1920x816.png" alt="Comigo Brain Image">-->
-        <!--<img src="assets/main-bg/home-featured-shine1.png" alt="Stars Image">-->
-        <!--<img src="assets/main-bg/home-featured-shine2.png" alt="Stars Image">-->
-        <!--<img src="assets/main-bg/home-featured-shine3.png" alt="Stars Image">-->
-        <!--<img src="assets/main-bg/home-featured-shine4.png" alt="Stars Image">-->
-        <!--<img src="assets/main-bg/home-featured-shine5.png" alt="Stars Image">-->
-        <!--<img src="assets/main-bg/home-featured-shine6.png" alt="Stars Image">-->
-        <!--<img src="assets/main-bg/home-featured-shine7.png" alt="Stars Image">-->
-        <!--<img src="assets/main-bg/home-featured-shine8.png" alt="Stars Image">-->
-        <!--</div>-->
-
+      <section class="main-strip center">
         <h1>Make Your OTT shine with the Experience Intelligence Cloud</h1>
 
-        <a href="#scheduele_demo">Schedule Demo</a>
+        <a href="#scheduele_demo" class="btn-general">Schedule a Demo</a>
       </section>
 
       <!-- ------------ WHY COMIGO ----------- -->
 
-      <section>
+      <section class="about-strip center">
         <h2>Why Comigo?</h2>
 
         <p>Creating a TV that understands, with automatic metadata enrichment and Artificial
           Intelligence (AI)</p>
 
-        <a href="#why_comigo">Learn More</a>
+        <a href="#why_comigo" class="btn-general">Learn More</a>
       </section>
 
       <!-- ------------ SERVICES -------------- -->
 
-      <section>
+      <section class="services-strip">
         <h2>Engage viewers, differentiate Experience and drive new revenue</h2>
         <p>with highly-relevant contextual services</p>
 
@@ -167,61 +164,75 @@
 
       <!-- -------------- ENHANCE ------------ -->
 
-      <section>
+      <section class="service1-strip service-box">
         <!--move to css-->
         <!--<img src="assets/other/home-tv-service-bg1.png" alt="Background Image Enhance TV">-->
-        <img src="assets/other/ic_EI_cloud_2_home_page.png" alt="Comigo Brain Network">
-        <h2>Enhance any TV Service</h2>
-        <p>Comigo Experience Intelligence (EI)</p>
-        <a href="#enhance">Enhance your OTT TV</a>
-      </section>
+        <img src="assets/other/ic-ei-cloud-brain-hp.png" alt="Comigo Brain Network">
 
-      <!-- --------------- DEPLOY ------------ -->
-
-      <section>
+        <div class="info-container-service">
+          <h2>Enhance any TV Service</h2>
+          <p>Comigo Experience Intelligence (EI)</p>
+          <a href="#enhance" class="btn-general">Enhance your OTT TV</a>
+        </div>
+      </section><!-- --------------- DEPLOY ------------
+      --><section class="service2-strip service-box">
         <!--move to css-->
         <!--<img src="assets/other/home-tv-service-bg2.png" alt="Background Image Deploy TV Service">-->
         <img src="assets/other/ic-stb-screens.png"
              alt="Image Computer, Ipad and Mobile Screen with Comigo Box">
-        <h2>Deploy best in class TV services</h2>
-        <p>Comigo's Android-based STB (HW&MW)</p>
-        <a href="#deploy">Deploy on Android</a>
+        <div class="info-container-service">
+          <h2>Deploy best in class TV services</h2>
+          <p>Comigo's Android-based STB (HW&MW)</p>
+          <a href="#deploy" class="btn-general">Deploy on Android</a>
+        </div>
       </section>
 
       <!-- --------- CONTENT ------------ -->
 
-      <section>
-        <h2>Your content Comigo's unique experience</h2>
-        <p>Intelligence-based contextual WatchApp&#8482 Applications</p>
-        <a href="#experience">Learn more</a>
-        <img src="assets/other/screen_whos_on.jpg" alt="TV Screen with Comigo User Interface">
+      <section class="content-strip">
+        <div class="info-container">
+          <h2>Your content Comigo's unique experience</h2>
+          <p>Intelligence-based contextual WatchApp&#8482 Applications</p>
+          <a href="#experience" class="btn-general">Learn more</a>
+          <div class="image-container">
+            <img src="assets/other/screen_whos_on.jpg" alt="TV Screen with Comigo User Interface">
+          </div>
+        </div>
       </section>
 
       <!-- --------- LEARN MORE ABOUT -------- -->
 
-      <section>
-        <h2>Learn more about Comigo</h2>
+      <section class="learn-strip">
 
-        <a href="">
-          <img src="assets/other/lnr-download.svg" alt="Download Icon">
-          <p>Download our brochure to learn more</p>
-        </a>
+        <div class="learn-strip-left">
 
-        <ul>
-          <li><a href="http://www.facebook.com" title="facebook" class="icon-facebook"></a></li>
-          <li><a href="http://www.twitter.com" title="twitter" class="icon-twitter"></a></li>
-          <li><a href="http://www.linkedin.com" title="linkedin" class="icon-linkedin2"></a></li>
-          <li><a href="http://www.youtube.com" title="youtube" class="icon-youtube"></a></li>
-        </ul>
+          <div class="download-container">
+            <h2>Learn more about Comigo</h2>
 
+            <a href="">
+              <img src="assets/other/lnr-download.svg" alt="Download Icon">
+              <p>Download our brochure to learn more</p>
+            </a>
+          </div>
 
-        <a href="#schedule_meeting">
-          <p>Schedule a meeting</p>
-          <img src="assets/logo/comigo-logo-white.png" alt="Logo Comigo Image">
-          <p>Experience Intelligence</p>
-        </a>
+          <div class="lower-section">
+            <ul class="social-container">
+              <li><a href="http://www.facebook.com" title="facebook" class="icon-facebook"></a></li>
+              <li><a href="http://www.twitter.com" title="twitter" class="icon-twitter"></a></li>
+              <li><a href="http://www.linkedin.com" title="linkedin" class="icon-linkedin2"></a></li>
+              <li><a href="http://www.youtube.com" title="youtube" class="icon-youtube"></a></li>
+            </ul>
 
-        <a href="#schedule_demo">
+            <a href="#schedule_meeting">
+            <p>Schedule a meeting</p>
+            <img src="assets/logo/comigo-logo-white.png" alt="Logo Comigo Image">
+            <p>Experience Intelligence</p>
+          </a>
+          </div>
+
+        </div>
+
+        <a class="schedule-demo-container" href="#schedule_demo">
           <p>Schedule a demo</p>
           <img src="assets/other/screen_demo.jpg" alt="TV Screen Comigo Category Seclection">
         </a>
@@ -229,53 +240,42 @@
 
       <!-- --------------- BLOG -------------- -->
 
-      <aside>
-        <header>
+      <aside class="blog-strip">
+        <header class="blog-container">
           <h2>Our blog</h2>
           <p>The inside view</p>
         </header>
-        <ul>
+        <ul class="clean-styled-list">
           <li>
-            <a href="#experience">
-              <!--shoukd be linkable, the entire block-->
+            <a href="#experience" class="blog-container blog1">
               <p>Comigo's Experience Intelligence Products redefine TV - And You Can Find Out How
                 at IBC2016</p>
-              <!--will be on CSS-->
-              <!--<img src="assets/blog/ibc_post_EI-750x508.png" alt="IBC Image">-->
               <p>Read More</p>
             </a>
           </li>
           <li>
-            <a href="#connect">
+            <a href="#connect" class="blog-container blog2">
               <p>What We Learned at TV Connect 2016</p>
-              <!--will be in css-->
-              <!--<img src="assets/blog/IMG_9294-750x563.jpeg" alt="What We Learned image">-->
               <p>Read More</p>
             </a>
           </li>
           <li>
-            <a href="#big_data">
+            <a href="#big_data" class="blog-container blog3">
               <p>Big Data Meets TV - The Next Phase In the TV Experience Evolution</p>
-              <!--will be in css-->
-              <!--<img src="assets/blog/Image-Blog-Yoav_356121362-copy-750x563.jpg" alt="Evolution Image">-->
               <p>Read More</p>
             </a>
           </li>
           <li>
-            <a href="#infusion">
+            <a href="#infusion" class="blog-container blog4">
               <p>Comigo Will Bring an Infusion of Internet Power and Contextual TV to Life at TV
                 Connect 2016
               </p>
-              <!--will be in css-->
-              <!--<img src="assets/blog/post_tv_connect-750x508.jpeg" alt="TV Connect 2016 Image">-->
               <p>Read More</p>
             </a>
           </li>
           <li>
-            <a href="#quality">
+            <a href="#quality" class="blog-container blog5">
               <p>Quality, Set-Top-Boxes, Crappy Cars, and Caveat Emptor</p>
-              <!--will be in css-->
-              <!--<img src="assets/blog/post_quality-750x508.jpeg" alt="Quality Image">-->
               <p>Read More</p>
             </a>
           </li>
@@ -286,9 +286,9 @@
 
     <!-- ------------- FOOTER -------------- -->
 
-    <footer>
-      <section>
-        <ul>
+    <footer class="main-footer">
+      <section class="footer-nav">
+        <ul class="clean-styled-list">
           <li><a href="">Home</a></li>
           <li><a href="">Our Solutions</a>
             <ul>
@@ -309,20 +309,20 @@
           <li><a href="">Contact Us</a></li>
         </ul>
 
-        <img src="assets/logo/comigo-logo-white.png" alt="Comigo Logo Image">
+        <img src="assets/logo/comigo-logo-white.png" alt="Comigo Logo Image" class="logo">
       </section>
 
-      <section>
-        <ul>
+      <section class="footer-ref">
+        <ul class="clean-styled-list">
           <li>All rights reserved Comigo &#xA9 2016</li>
           <li><a href="">Terms of Use</a></li>
           <li><a href="">Contact Us</a></li>
           <li><a href="">Privacy Policy</a></li>
         </ul>
 
-        <address>Developed by FATLADY</address>
+        <address>Developed by <a href="#">FATLADY</a></address>
 
-        <ul>
+        <ul class="social-list clean-styled-list">
           <li><a href="http://www.facebook.com" title="facebook" class="icon-facebook"></a></li>
           <li><a href="http://www.twitter.com" title="twitter" class="icon-twitter"></a></li>
           <li><a href="http://www.linkedin.com" title="linkedin" class="icon-linkedin2"></a></li>

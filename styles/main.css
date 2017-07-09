@@ -1,5 +1,476 @@
-@media (max-width: 700px) {
-  nav {
-    display: none;
-  }
+/*------------- GENERAL --------------*/
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+*, *:before, *:after {
+  box-sizing: inherit
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #3D3D3D;
+  margin: 0;
+  padding: 0;
+}
+
+.clean-styled-list ul,
+ul.clean-styled-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.btn-general {
+  background-color: #F14848;
+  text-decoration: none;
+  color: #FFF;
+  padding: 18px 40px;
+  border-radius: 40px;
+  text-transform: uppercase;
+  margin: 20px 0px;
+  display: inline-block;
+  letter-spacing: 2px;
+}
+
+.btn-general:focus {
+  outline: none;
+}
+
+.info-container {
+  display: inline-block;
+  margin: 0;
+  padding: 5px;
+}
+
+/*-------- NAVBAR / HEADER SECTION -------*/
+
+.main-header {
+  vertical-align: middle;
+  text-align: right;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: white;
+  z-index: 10;
+}
+
+/*Comigo logo*/
+.main-header > a {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  left: 20px;
+}
+
+/*Navigation Bar*/
+.main-header nav {
+  display: inline-block;
+  margin: auto 0 auto auto;
+}
+
+/*All anchors*/
+.main-header nav a {
+  display: inline-block;
+  font-weight: 300;
+  text-decoration: none;
+  line-height: 60px;
+  padding: 0 25px;
+  color: rgb(61,61,61);
+  width:100%;
+  height: 100%;
+}
+
+.main-header nav > ul > li > a {
+  font-size: 1.2rem;
+}
+
+.main-header nav ul,
+.main-header nav li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+
+}
+
+.main-header nav > ul > li > ul {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 60px;
+  background-color: rgba(256,256,256,0.99);
+}
+
+/*Level 3*/
+.main-header nav > ul ul ul {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 200px;
+  background-color: rgba(256,256,256,0.99);
+}
+
+/*Level Two*/
+.main-header nav > ul > li > ul > li {
+  width: 33.2%;
+}
+
+/*Level Three*/
+.main-header nav > ul ul ul > li {
+  width: 50%;
+}
+
+/*Level Two and Three Anchors*/
+.main-header nav > ul ul a,
+.main-header nav > ul ul ul a
+{
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.main-header nav > ul > li > a:hover,
+.main-header nav > ul > li > a:focus
+{
+  color: #f14848;
+  outline: none;
+}
+
+.main-header nav > ul > li > ul a:hover,
+.main-header nav > ul > li > ul a:focus
+{
+  color: #fff;
+  background-color: #f14848;
+}
+
+.main-header ul ul {
+  display: none;
+}
+
+.main-header nav ul > li:hover > ul {
+  display: block;
+  transition: transform 2s;
+}
+
+/*--------------- MAIN -------------------*/
+
+/*------------ MAIN STRIP -----------*/
+
+/*noinspection ALL*/
+.main-strip {
+  color: #fff;
+  height: 42.5vw;
+  background:
+    url("../assets/main-bg/home-brain-image-new-1920x816.png"),
+    url("../assets/main-bg/home-featured-shine1.png"),
+    url("../assets/main-bg/home-featured-shine2.png"),
+    url("../assets/main-bg/home-featured-shine3.png"),
+    url("../assets/main-bg/home-featured-shine4.png"),
+    url("../assets/main-bg/home-featured-shine5.png"),
+    url("../assets/main-bg/home-featured-shine6.png"),
+    url("../assets/main-bg/home-featured-shine7.png"),
+    url("../assets/main-bg/home-featured-shine8.png"),
+    url("../assets/main-bg/home-featured-bg.png") fixed;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 10vw;
+}
+
+.main-strip h1 {
+  font-size: 5rem;
+  font-weight: 400;
+  margin: 0px auto;
+  max-width: 900px;
+}
+
+/*------------ WHY COMIGO -----------*/
+
+.about-strip {
+  padding: 120px 0;
+}
+
+.about-strip h2 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 0px auto 10px;
+  max-width: 900px;
+}
+
+.about-strip p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 0px auto;
+  color: #3D3D3D;
+  max-width: 400px;
+  line-height: 2rem;
+}
+
+/*------------ SERVICES -------------*/
+
+.services-strip {
+  display: none;
+}
+
+/*-------------- ENHANCE ------------*/
+/*--------------- DEPLOY ------------*/
+
+.service-box {
+  display: inline-block;
+  margin: 0;
+  padding-left: 10%;
+  padding-top: 2%;
+  border: 0;
+  width: 50%;
+  height: 40vw;
+  vertical-align: bottom;
+  position: relative;
+}
+
+.service-box .info-container-service {
+  display: block;
+  max-width: 400px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 5%;
+}
+
+.service-box h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 0 0 10px 0;
+}
+
+.service-box img {
+  height: 40%;
+}
+
+.service1-strip {
+  background: red url("../assets/other/home-tv-service-bg1.png") no-repeat center;
+  background-size: cover;
+  color: white;
+}
+
+.service2-strip {
+  background: red url("../assets/other/home-tv-service-bg2.png") no-repeat center;
+  color: #3D3D3D;
+  background-size: cover;
+}
+
+/*-------------- CONTENT ------------*/
+
+.content-strip {
+  display: block;
+  position: relative;
+  padding: 100px 10%;
+  overflow: hidden;
+}
+
+.content-strip .image-container {
+  position: absolute;
+  display: inline-block;
+  left:50%;
+  top: 5%;
+  bottom: 5%;
+}
+
+.content-strip img {
+  height: 100%;
+}
+
+.content-strip .info-container {
+  max-width: 290px;
+}
+.content-strip .info-container h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.content-strip .info-container p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+
+
+/*--------- LEARN MORE ABOUT --------*/
+
+.learn-strip * {
+  border: 1px solid red;
+
+}
+
+.learn-strip .learn-strip-left {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 59%;
+}
+
+.learn-strip .download-container,
+.learn-strip .learn-strip-left .lower-section {
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: 50%;
+}
+
+
+.learn-strip .download-container a {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 30%;
+  background-color: #F14848;
+}
+
+.learn-strip .learn-strip-left .social-container {
+  list-style: none;
+  margin: 0;
+  padding: 5%;
+  background-color: #EFEFEF;
+}
+
+.learn-strip .learn-strip-left .social-container li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+
+}
+
+.learn-strip .learn-strip-left .social-container a
+{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-size: 3rem;
+  line-height: 5rem;
+  margin: 10px;
+  padding: 0;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: red;
+  text-align: center;
+}
+
+
+
+
+.learn-strip .schedule-demo-container {
+  display: inline-block;
+  width: 40%;
+  padding: 0;
+  margin: 0;
+  background-color: #EFEFEF;
+}
+
+.learn-strip .schedule-demo-container p{
+  padding: 0;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #F14848;
+  max-width: 60%;
+  margin: 0 0 10px;
+}
+
+.learn-strip a.schedule-demo-container {
+  text-decoration: none;
+}
+
+.learn-strip .schedule-demo-container img {
+  width: 95%;
+  align-self: right;
+}
+
+
+
+
+
+
+
+/*--------------- BLOG --------------*/
+
+.blog-strip {
+
+}
+
+.blog-strip li,
+.blog-strip ul
+{
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+.blog-strip a {
+  text-decoration: none;
+  color: #fff
+}
+
+.blog-strip .blog-container
+{
+  background-color: #449fdb;
+  display: inline-block;
+  width: 200px;
+  height: 500px;
+  background-size: contain;
+}
+
+.blog-strip .blog-container.blog1 {
+  background: no-repeat url("../assets/blog/ibc_post_EI-750x508.png") center center;
+  background-size: cover;
+}
+.blog-strip .blog-container.blog2 {
+  background: no-repeat url("../assets/blog/IMG_9294-750x563.jpeg") center center;
+}
+.blog-strip .blog-container.blog3 {
+  background: no-repeat url("../assets/blog/Image-Blog-Yoav_356121362-copy-750x563.jpg") center center;
+}
+.blog-strip .blog-container.blog4 {
+  background: no-repeat url("../assets/blog/post_tv_connect-750x508.jpeg") center center;
+}
+.blog-strip .blog-container.blog5 {
+  background: no-repeat url("../assets/blog/post_quality-750x508.jpeg") center center;
+}
+
+/*---------------- FOOTER -----------------*/
+
+.main-footer {
+  color: #7a7a7a;
+}
+
+.main-footer a {
+  text-decoration: none;
+  color: #7a7a7a;
+}
+
+.main-footer .footer-nav {
+  background-color: #1E2024;
+}
+
+.main-footer .footer-nav ul ul a:hover {
+  color: #f14848;
+}
+
+.main-footer .footer-ref {
+  background-color: #151515;
+  color: #636363;
+}
+
+.main-footer .footer-ref a:hover {
+  color: #FFF;
 }
