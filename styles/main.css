@@ -100,19 +100,19 @@ ul.clean-styled-list {
 }
 
 .main-header nav > ul > li > ul {
-  position: fixed;
+  position: absolute;
   left: 0;
   right: 0;
-  top: 60px;
+  top: 100%;
   background-color: rgba(256,256,256,0.99);
 }
 
 /*Level 3*/
 .main-header nav > ul ul ul {
-  position: fixed;
+  position: absolute;
   left: 0;
   right: 0;
-  top: 200px;
+  top: 100%;
   background-color: rgba(256,256,256,0.99);
 }
 
@@ -184,6 +184,7 @@ ul.clean-styled-list {
   background-size: cover;
   background-position: center center;
   padding-top: 10vw;
+  margin-top: 30px;
 }
 
 .main-strip h1 {
@@ -219,8 +220,115 @@ ul.clean-styled-list {
 /*------------ SERVICES -------------*/
 
 .services-strip {
-  display: none;
+  position: relative;
+  display: block;
+  margin: auto;
+  height: 40vw;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.8);
+  /*display: none;*/
 }
+
+.services-strip .services-strip-header {
+  display: inline-block;
+  height: 100%;
+  width: 30%;
+  /*background-color: black;*/
+  position: relative;
+  color: white;
+  z-index: 2;
+  padding-left: 12%;
+  padding-top: 3%;
+}
+
+.services-strip .services-strip-header h2 {
+  font-weight: 300;
+  font-size: 2.8vw;
+  text-transform: uppercase;
+}
+
+.services-strip .services-strip-header p {
+  font-weight: 300;
+  font-size: 1.2rem;
+  max-width: 70%;
+}
+
+.services-strip ul {
+  display: inline-block;
+  vertical-align: top;
+  list-style: none;
+  padding-left: 10%;
+  width: 68%;
+  padding-top: 3%;
+  /*z-index: 3;*/
+  /*display: none;*/
+}
+
+.services-strip ul li {
+  /*position: absolute;*/
+
+}
+
+.services-strip ul li h3 {
+  font-weight: 300;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.services-strip ul li p {
+  text-align: center;
+  vertical-align: middle;
+  position: absolute;
+  right: 10%;
+  left: 60%;
+  top: 10%;
+  bottom: 80%;
+  background-color: black;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.services-strip ul figure {
+  position: absolute;
+  right: 10%;
+  left: 60%;
+  top: 20%;
+  bottom: 5%;
+  text-align: center;
+  /*display: none;*/
+}
+
+.services-strip ul figure,
+.services-strip ul video,
+.services-strip ul li p {
+  visibility: hidden;
+}
+
+.services-strip ul li:first-of-type figure,
+.services-strip ul li:first-of-type video,
+.services-strip ul li:first-of-type p {
+  visibility: visible;
+}
+
+
+.services-strip ul figure img {
+  width: 100%;
+  max-height: 100%;
+}
+
+
+.services-strip video {
+  position: absolute;
+  left:0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+  /*display: none;*/
+}
+
 
 /*-------------- ENHANCE ------------*/
 /*--------------- DEPLOY ------------*/
@@ -253,6 +361,11 @@ ul.clean-styled-list {
   margin: 0 0 10px 0;
 }
 
+.service-box p {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
 .service-box img {
   height: 40%;
 }
@@ -261,6 +374,11 @@ ul.clean-styled-list {
   background: red url("../assets/other/home-tv-service-bg1.png") no-repeat center;
   background-size: cover;
   color: white;
+}
+
+.service1-strip .btn-general {
+  color: #E04747;
+  background-color: #FAFAFA;
 }
 
 .service2-strip {
@@ -308,83 +426,189 @@ ul.clean-styled-list {
 /*--------- LEARN MORE ABOUT --------*/
 
 .learn-strip * {
-  border: 1px solid red;
+  /*border: 1px solid red;*/
+}
 
+.learn-strip {
+  margin: 0;
+  padding: 0;
+  height: 40vw;
+  background-color: red;
 }
 
 .learn-strip .learn-strip-left {
   display: inline-block;
+  background-color: blue;
   margin: 0;
   padding: 0;
-  width: 59%;
+  width: 60%;
+  height: 100%;
+  vertical-align: top;
 }
 
-.learn-strip .download-container,
+.learn-strip .learn-strip-left .download-container,
 .learn-strip .learn-strip-left .lower-section {
   display: block;
+  position: relative;
   margin: 0;
   padding: 0;
   height: 50%;
 }
 
+.learn-strip .download-container {
+  background-color: #F9F9F9;
+}
 
-.learn-strip .download-container a {
+.learn-strip .download-container h2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 0 0 2%;
+  padding: 0 3%;
+  width: 65%;
+  font-size: 4.2vw;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.learn-strip .download-container .download-button {
   display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 65%;
   margin: 0;
-  padding: 0;
-  width: 30%;
+  padding: 3% 0 0;
   background-color: #F14848;
 }
 
+.learn-strip .download-container .download-button .image-wrapper {
+  display: block;
+  margin: auto;
+  width: 50%;
+  border-radius: 50%;
+  padding: 16%;
+  border: 0.3vw solid white;
+}
+
+
+.learn-strip .download-container .download-button img {
+  display: inline-block;
+  width: 100%;
+}
+
+.learn-strip .download-container .download-button p {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  font-size: 1.5vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1% 10%;
+}
+
 .learn-strip .learn-strip-left .social-container {
-  list-style: none;
+  display: inline-block;
+  height: 100%;
+  width: 35%;
   margin: 0;
-  padding: 5%;
   background-color: #EFEFEF;
+  padding: 2%;
+  list-style: none;
 }
 
 .learn-strip .learn-strip-left .social-container li {
-  display: inline-block;
+  display: inline-table;
+  width: 45%;
+  background: red;
+  height: 45%;
+  text-align: justify;
   padding: 0;
-  margin: 0;
-
+  margin: 2%;
+  border-radius: 50%;
 }
 
-.learn-strip .learn-strip-left .social-container a
-{
-  display: inline-block;
+.learn-strip .learn-strip-left .social-container a {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
   color: white;
   text-decoration: none;
-  font-size: 3rem;
-  line-height: 5rem;
-  margin: 10px;
+  font-size: 4vw;
+  width: 100%;
+  height: 100%;
   padding: 0;
-  height: 80px;
-  width: 80px;
   border-radius: 50%;
-  background-color: red;
-  text-align: center;
 }
 
+.learn-strip .learn-strip-left .schedule-meeting {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 35%;
+  background-color: pink;
+  background: url("../assets/main-bg/home-featured-bg.png");
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
 
+.learn-strip .learn-strip-left a.schedule-meeting {
+  text-decoration: none;
+}
 
+.learn-strip .learn-strip-left .schedule-meeting p:nth-of-type(1) {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 2vw;
+  color: black;
+  margin: 0;
+  padding: 0 0 0 5%;
+  line-height: 4vw;
+  background: linear-gradient(to right, white , transparent);
+}
+
+.learn-strip .learn-strip-left .schedule-meeting img {
+  display: block;
+  margin: 15% auto 10px;
+  width: 50%;
+}
+
+.learn-strip .learn-strip-left .schedule-meeting p:nth-of-type(2) {
+  display: block;
+  text-align: center;
+  margin: auto;
+  margin-top: 0;
+  padding: 0;
+  color: white;
+  font-weight: 300;
+  font-size: 2vw;
+}
 
 .learn-strip .schedule-demo-container {
   display: inline-block;
+  position: relative;
   width: 40%;
-  padding: 0;
+  height: 100%;
+  padding: 1% 0 0;
   margin: 0;
   background-color: #EFEFEF;
+  overflow: hidden;
 }
 
 .learn-strip .schedule-demo-container p{
-  padding: 0;
+  padding: 0 0 0 10%;
+  margin: 0;
   font-weight: 300;
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 5vw;
   color: #F14848;
-  max-width: 60%;
-  margin: 0 0 10px;
 }
 
 .learn-strip a.schedule-demo-container {
@@ -392,8 +616,11 @@ ul.clean-styled-list {
 }
 
 .learn-strip .schedule-demo-container img {
-  width: 95%;
-  align-self: right;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  right: 0;
+  top: 35%;
 }
 
 
@@ -405,7 +632,7 @@ ul.clean-styled-list {
 /*--------------- BLOG --------------*/
 
 .blog-strip {
-
+  display: none;
 }
 
 .blog-strip li,
@@ -451,6 +678,7 @@ ul.clean-styled-list {
 
 .main-footer {
   color: #7a7a7a;
+  display: none;
 }
 
 .main-footer a {

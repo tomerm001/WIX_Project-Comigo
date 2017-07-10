@@ -36,11 +36,12 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="">Our Solutions</a>
             <ul>
-              <li><a href="">EI Cloud</a></li>
-              <ul>
-                <li><a href="">EI<sup>x</sup></a></li><!--
-                --><li><a href="">EI Mind</a></li>
-              </ul>
+              <li><a href="">EI Cloud</a>
+                <ul>
+                  <li><a href="">EI<sup>x</sup></a></li><!--
+                  --><li><a href="">EI Mind</a></li>
+                </ul>
+              </li>
               <li><a href="">EI Middleware</a>
                 <ul>
                   <li><a href="">Android</a></li><!--
@@ -87,8 +88,11 @@
       <!-- ------------ SERVICES -------------- -->
 
       <section class="services-strip">
-        <h2>Engage viewers, differentiate Experience and drive new revenue</h2>
-        <p>with highly-relevant contextual services</p>
+
+        <div class="services-strip-header">
+          <h2>Engage viewers, differentiate Experience and drive new revenue</h2>
+          <p>with highly-relevant contextual services</p>
+        </div>
 
         <ul>
           <li>
@@ -165,8 +169,6 @@
       <!-- -------------- ENHANCE ------------ -->
 
       <section class="service1-strip service-box">
-        <!--move to css-->
-        <!--<img src="assets/other/home-tv-service-bg1.png" alt="Background Image Enhance TV">-->
         <img src="assets/other/ic-ei-cloud-brain-hp.png" alt="Comigo Brain Network">
 
         <div class="info-container-service">
@@ -176,8 +178,6 @@
         </div>
       </section><!-- --------------- DEPLOY ------------
       --><section class="service2-strip service-box">
-        <!--move to css-->
-        <!--<img src="assets/other/home-tv-service-bg2.png" alt="Background Image Deploy TV Service">-->
         <img src="assets/other/ic-stb-screens.png"
              alt="Image Computer, Ipad and Mobile Screen with Comigo Box">
         <div class="info-container-service">
@@ -209,8 +209,10 @@
           <div class="download-container">
             <h2>Learn more about Comigo</h2>
 
-            <a href="">
-              <img src="assets/other/lnr-download.svg" alt="Download Icon">
+            <a class="download-button" href="">
+              <div class="image-wrapper">
+                <img src="assets/other/lnr-download.svg" alt="Download Icon">
+              </div>
               <p>Download our brochure to learn more</p>
             </a>
           </div>
@@ -223,16 +225,15 @@
               <li><a href="http://www.youtube.com" title="youtube" class="icon-youtube"></a></li>
             </ul>
 
-            <a href="#schedule_meeting">
+            <a class="schedule-meeting" href="#schedule_meeting">
             <p>Schedule a meeting</p>
             <img src="assets/logo/comigo-logo-white.png" alt="Logo Comigo Image">
             <p>Experience Intelligence</p>
-          </a>
+            </a>
           </div>
 
-        </div>
-
-        <a class="schedule-demo-container" href="#schedule_demo">
+        </div><!--
+        --><a class="schedule-demo-container" href="#schedule_demo">
           <p>Schedule a demo</p>
           <img src="assets/other/screen_demo.jpg" alt="TV Screen Comigo Category Seclection">
         </a>
